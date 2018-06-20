@@ -18,7 +18,9 @@ var arr = [10,20,30];
 */
 
 //Code Here
-
+function first(arr){
+  return arr[0]
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -33,7 +35,9 @@ var arr = [40,50,60];
 */
 
 //Code Here
-
+function last(arr){
+  return arr.pop()
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -48,7 +52,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-
+function looper(family){
+for(let i = 0; i<family.length; i++){
+  alert(family[i])
+  }
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -63,7 +71,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+function reversedLooper(letters){
+  for(i=letters.length-1;i>=0;i--){
+    alert(letters[i])
+  }
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -78,20 +90,18 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
-
-
-
-
-
-
+function evenFinder(nums){
+  var evenArray = [];
+  for(var i = 0; i < nums.length; i++){
+    if(nums[i]%2===0){
+      evenArray.push(nums[i])
+    }
+  }
+  return evenArray
+}
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
-
-
-
-
-
 
 
 ////////// PROBLEM 6 //////////
@@ -106,7 +116,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
-
+function divider(numbersArray){
+  var evensArray = [];
+  var oddsArray = [];
+  for(var i = 0; i < numbersArray.length; i++){
+    if(numbersArray[i]%2===0){
+      evensArray.push(numbersArray[i])
+    } else {
+      oddsArray.push(numbersArray[i])
+    }
+  }
+  return evensArray
+  return oddsArray
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -127,7 +149,15 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-
+function finder(array){
+  for(let i=0; i<array.length; i++){
+    if((array.indexOf(getRandomArbitrary()) === -1)){
+      return false
+    } else {
+      return true
+    }
+  }
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -167,7 +197,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
-
+function maker(){
+  makedArray = []
+  for(let i=0; i<215; i++){
+    makedArray[i] = i + 1;
+  }
+  return makedArray
+}
 
 ////////// PROBLEM 10 //////////
 
@@ -182,7 +218,15 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+function addTen(numbers) {
+  var newArr = [];
+  for( var i = 0; i < numbers.length; i++ ) {
+      let int = parseInt(numbers[i])
+      newArr.push( int += 10)
+    }
 
+  return newArr;
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -207,7 +251,13 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(arr1, arr2){
+  if(arr1.length > arr2.length){
+    return arr1
+  } else {
+    return arr2
+  }
+}
 
 
 /*
@@ -219,7 +269,9 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+function both(arr1, arr2){
 
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -259,8 +311,9 @@ var colt = {
 */
 
 //Code Here
+devMountainEmployees.push(tyler, cahlan, ryan, colt)
 
-
+console.log(devMountainEmployees.length);
 
 /*
   Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
@@ -269,6 +322,9 @@ var colt = {
 
 //Code Here
 
+
+
+//
 
 
 ////////// PROBLEM 13 //////////
